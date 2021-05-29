@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="16dp"
+    android:padding="16dp"
     android:background="#FEF4E8">
 
 
@@ -73,6 +73,7 @@
         android:id="@+id/edt_rtpass"
         android:text=" retype password"
         android:layout_gravity="center"
+        android:textColor="#803D78"
         android:layout_marginBottom="40dp"
         android:drawableLeft="@drawable/ic_baseline_lock_25"/>
 
