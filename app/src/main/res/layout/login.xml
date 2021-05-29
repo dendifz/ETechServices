@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+
+    android:background="#FEF4E8">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-tech Servies"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/bereg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="sign to shopping"
+        android:fontFamily="@font/opeita"
+        android:textSize="30dp"
+        android:layout_marginBottom="40dp"
+        android:textColor="#803D78"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_shopping_cart_24"
+        android:id="@+id/image"
+        android:layout_marginBottom="40dp"
+        android:textColorHighlight="#8A2BE2"
+        />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:text="Username"
+        android:textColor="#803D78"
+        android:id="@+id/username"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:text="password"
+        android:textColor="#803D78"
+        android:layout_marginBottom="40dp"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btn_login"
+        android:text="login"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="i having a trouble,help"
+        android:textColor="#803D78"
+        android:id="@+id/trouble"
+        android:textSize="19dp"/>
+
+</LinearLayout>
