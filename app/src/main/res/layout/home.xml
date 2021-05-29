@@ -26,42 +26,43 @@
             android:textColor="#000000"
             android:textSize="30sp" />
 
-        <LinearLayout
+        <TableLayout
             android:id="@+id/linear1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/t2"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="54dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="40dp"
+            android:stretchColumns="*"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_weight="1"
+            <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
                 android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginEnd="8dp"
-                    android:layout_weight="1"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
-                    android:drawableTop="@drawable/outline_music_note_white_48dp"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="5dp"
+                    android:drawableTop="@drawable/outline_headphones_white_36dp"
                     android:text="Music"
-                    android:layout_gravity="center"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/cat_bt" />
 
                 <Button
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginEnd="8dp"
                     android:paddingTop="25dp"
                     android:paddingBottom="5dp"
@@ -71,31 +72,29 @@
                     android:background="@drawable/cat_bt" />
 
                 <Button
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:paddingTop="25dp"
                     android:paddingBottom="5dp"
-                    android:drawableTop="@drawable/outline_sports_handball_white_36dp"
+                    android:layout_marginEnd="5dp"
+                    android:drawableTop="@drawable/outline_sports_basketball_white_36dp"
                     android:text="Sport"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/cat_bt" />
-            </LinearLayout>
+            </TableRow>
 
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_marginTop="10dp"
+            <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
                 android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginEnd="8dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:paddingTop="25dp"
                     android:paddingBottom="5dp"
                     android:drawableTop="@drawable/outline_two_wheeler_white_36dp"
@@ -104,11 +103,9 @@
                     android:background="@drawable/cat_bt" />
 
                 <Button
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginEnd="8dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:paddingTop="25dp"
                     android:paddingBottom="5dp"
                     android:drawableTop="@drawable/outline_checkroom_white_36dp"
@@ -117,32 +114,28 @@
                     android:background="@drawable/cat_bt" />
 
                 <Button
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:paddingTop="25dp"
                     android:paddingBottom="5dp"
+                    android:layout_marginEnd="5dp"
                     android:drawableTop="@drawable/outline_laptop_white_36dp"
                     android:text="Electronic"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/cat_bt" />
-            </LinearLayout>
+            </TableRow>
 
-            <LinearLayout
+            <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="144dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:paddingTop="5dp"
                 android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginEnd="8dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:paddingTop="25dp"
                     android:paddingBottom="5dp"
                     android:drawableTop="@drawable/outline_earbuds_white_36dp"
@@ -151,11 +144,9 @@
                     android:background="@drawable/cat_bt" />
 
                 <Button
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginEnd="8dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:paddingTop="25dp"
                     android:paddingBottom="5dp"
                     android:drawableTop="@drawable/outline_kitchen_white_36dp"
@@ -164,17 +155,16 @@
                     android:background="@drawable/cat_bt" />
 
                 <Button
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:paddingTop="25dp"
                     android:paddingBottom="5dp"
+                    android:layout_marginEnd="5dp"
                     android:drawableTop="@drawable/outline_restaurant_white_36dp"
                     android:text="FOOD - DRINKS"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/cat_bt" />
-            </LinearLayout>
-        </LinearLayout>
+            </TableRow>
+        </TableLayout>
     </RelativeLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>
