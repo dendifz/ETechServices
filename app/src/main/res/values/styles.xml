@@ -8,6 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
 
         <item name="android:fontFamily">@font/coolvetica</item>
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
 
 </resources>

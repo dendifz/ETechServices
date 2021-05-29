@@ -20,7 +20,6 @@ public class Home extends AppCompatActivity {
         /** Hide Action Bar Of This Activity Screen */
         getSupportActionBar().hide();
         setContentView(R.layout.home);
-        Typeface type = Typeface.createFromAsset(getAssets(), "font/coolvetica.ttf");
 
     }
 }
