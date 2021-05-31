@@ -52,6 +52,7 @@
             android:layout_marginBottom="12dp"
             android:background="@drawable/button"
             android:text="@string/sign_in"
+            android:onClick="Sign_in"
             android:textColor="#FFFFFF" />
 
         <TextView
@@ -66,6 +67,7 @@
             android:layout_marginBottom="65dp"
             android:textColor="#EE5A5A"
             android:gravity="center"
-            android:text="@string/register" />
+            android:text="@string/register"
+            android:onClick="regist"/>
     </RelativeLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>

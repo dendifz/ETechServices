@@ -4,15 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< Updated upstream:app/src/main/res/layout/login.xml
     tools:context=".Login"
-=======
-    tools:context=".MainActivity"
     android:padding="20dp"
->>>>>>> Stashed changes:app/src/main/res/layout/activity_main.xml
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#FEF4E8">
+    >
 
     <TextView
         android:id="@+id/textview"
@@ -45,22 +40,25 @@
         />
 
     <EditText
+        android:padding="20dp"
         android:layout_width="350dp"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_baseline_person_24"
-        android:text="Username"
-        android:textColor="#803D78"
+        android:hint="Username"
+        android:textColorHint="#803D78"
         android:id="@+id/username"
         android:layout_marginBottom="10dp"/>
     <EditText
+        android:padding="20dp"
+        android:inputType="textPassword"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:id="@+id/pass"
         android:layout_gravity="center"
         android:drawableLeft="@drawable/ic_baseline_lock_24"
-        android:text="password"
-        android:textColor="#803D78"
+        android:hint="password"
+        android:textColorHint="#803D78"
         android:layout_marginBottom="40dp"/>
     <Button
         android:layout_width="300dp"
@@ -69,6 +67,7 @@
         android:layout_marginBottom="10dp"
         android:id="@+id/btn_login"
         android:text="login"
+        android:onClick="OnClick"
         android:textColor="#FFFFFF"
         android:background="@drawable/custom1"
         />

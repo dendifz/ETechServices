@@ -2,8 +2,10 @@ package com.latihan.etechservices;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -28,5 +30,15 @@ public class TampilanAwal extends AppCompatActivity {
         TextView textGreet = findViewById(R.id.t1);
         TextView btn_sign_up = findViewById(R.id.sign_up);
 
+    }
+
+    public void Sign_in(View view) {
+        Intent intent = new Intent(TampilanAwal.this,Login.class);
+        startActivity(intent);
+    }
+
+    public void regist(View view) {
+        Intent intent = new Intent(TampilanAwal.this,Register.class);
+        startActivity(intent);
     }
 }
