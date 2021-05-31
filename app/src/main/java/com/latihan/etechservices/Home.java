@@ -2,10 +2,13 @@ package com.latihan.etechservices;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 
 public class Home extends AppCompatActivity {
 
@@ -21,5 +24,14 @@ public class Home extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.home);
 
+        Button sport_btn = findViewById(R.id.sport_btn);
+
+        sport_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Home.this, sport.class);
+                startActivity(i);
+            }
+        });
     }
 }

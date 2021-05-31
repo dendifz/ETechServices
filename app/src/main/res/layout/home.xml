@@ -72,6 +72,7 @@
                     android:background="@drawable/cat_bt" />
 
                 <Button
+                    android:id="@+id/sport_btn"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingTop="25dp"
