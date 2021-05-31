@@ -7,13 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import static android.widget.Toast.LENGTH_SHORT;
 
 public class Login extends AppCompatActivity {
 
     private EditText username;
     private EditText password;
     private Button btn_login;
+    String user,pass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +36,8 @@ public class Login extends AppCompatActivity {
         password = findViewById(R.id.pass);
         TextView guest = findViewById(R.id.trouble);
 
+        user = String.valueOf(username);
+        pass = String.valueOf(password);
         guest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,11 +49,11 @@ public class Login extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                if ("user" == R.id.username || "user" == R.id.pass ){
+                if (!user.equals("user") || !pass.equals("user") ){
                     Intent intent = new Intent(Login.this,Home.class);
                     startActivity(intent);
                 }else {
-                   System.out.println("username atau password salah");
+                    Toast.makeText(getApplicationContext(),"Username Atau Password Salah", LENGTH_SHORT).show();
                 }
             }
         });
