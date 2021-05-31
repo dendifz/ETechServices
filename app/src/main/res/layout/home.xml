@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="8dp"
+            android:text="Which subject \nyou looking for?"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/t2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:drawableTop="@drawable/outline_music_note_white_48dp"
+                    android:text="Music"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/cat_bt" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="5dp"
+                    android:drawableTop="@drawable/outline_account_balance_wallet_white_36dp"
+                    android:text="e-Money"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/cat_bt" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="5dp"
+                    android:drawableTop="@drawable/outline_sports_handball_white_36dp"
+                    android:text="Sport"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/cat_bt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="5dp"
+                    android:drawableTop="@drawable/outline_two_wheeler_white_36dp"
+                    android:text="Automotive"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/cat_bt" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="5dp"
+                    android:drawableTop="@drawable/outline_checkroom_white_36dp"
+                    android:text="Fashion"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/cat_bt" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="5dp"
+                    android:drawableTop="@drawable/outline_laptop_white_36dp"
+                    android:text="Electronic"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/cat_bt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="5dp"
+                    android:drawableTop="@drawable/outline_earbuds_white_36dp"
+                    android:text="Accesories"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/cat_bt" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="5dp"
+                    android:drawableTop="@drawable/outline_kitchen_white_36dp"
+                    android:text="Kitchen"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/cat_bt" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="5dp"
+                    android:drawableTop="@drawable/outline_restaurant_white_36dp"
+                    android:text="FOOD - DRINKS"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/cat_bt" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
