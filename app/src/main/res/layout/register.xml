@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#FEF4E8">
+    android:padding="16dp">
 
 
     <TextView
@@ -23,7 +22,7 @@
         android:textSize="30dp"
         android:text="sign up to start
         shopping"
-        android:textColor="#803D78"
+        android:textColor="#EE5A5A"
         android:fontFamily="@font/opeita"
         android:layout_marginBottom="40dp"/>
 
@@ -32,8 +31,8 @@
         android:layout_gravity="center"
         android:id="@+id/edt_email"
         android:layout_marginBottom="10dp"
-        android:textColor="#803D78"
-        android:text=" example@tech.com"
+        android:textColor="#EE5A5A"
+        android:hint=" example@tech.com"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_baseline_email_24" />
 
@@ -42,38 +41,40 @@
         android:layout_marginBottom="10dp"
         android:layout_width="350dp"
         android:layout_gravity="center"
-        android:textColor="#803D78"
+        android:textColor="#EE5A5A"
         android:drawableLeft="@drawable/ic_baseline_person_25"
-        android:text=" name"
+        android:hint=" name"
         android:layout_height="wrap_content"/>
 
     <EditText
         android:id="@+id/edt_number"
-        android:textColor="#803D78"
+        android:textColor="#EE5A5A"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
         android:drawableLeft="@drawable/ic_baseline_phone_24"
-        android:text=" +62 98829301902" />
+        android:hint=" +62 98829301902" />
 
     <EditText
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/edt_pass"
-        android:text=" password"
+        android:hint=" password"
+        android:inputType="textPassword"
         android:layout_marginBottom="10dp"
-        android:textColor="#803D78"
+        android:textColor="#EE5A5A"
         android:drawableLeft="@drawable/ic_baseline_lock_25"/>
 
     <EditText
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:id="@+id/edt_rtpass"
-        android:text=" retype password"
+        android:hint=" retype password"
+        android:inputType="textPassword"
         android:layout_gravity="center"
-        android:textColor="#803D78"
+        android:textColor="#EE5A5A"
         android:layout_marginBottom="40dp"
         android:drawableLeft="@drawable/ic_baseline_lock_25"/>
 

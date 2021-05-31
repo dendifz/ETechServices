@@ -30,6 +30,22 @@ public class TampilanAwal extends AppCompatActivity {
         TextView textGreet = findViewById(R.id.t1);
         TextView btn_sign_up = findViewById(R.id.sign_up);
 
+        btn_sign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(TampilanAwal.this, Login.class);
+                startActivity(i);
+            }
+        });
+
+        btn_sign_up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(TampilanAwal.this, Register.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     public void Sign_in(View view) {
