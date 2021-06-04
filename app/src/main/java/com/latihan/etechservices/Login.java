@@ -49,7 +49,7 @@ public class Login extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                if (!user.equals("user") || !pass.equals("user") ){
+                if (!user.equals("user") || !pass.equals(123) ){
                     Intent intent = new Intent(Login.this,Home.class);
                     startActivity(intent);
                 }else {

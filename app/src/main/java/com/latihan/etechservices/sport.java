@@ -1,33 +1,37 @@
 package com.latihan.etechservices;
 
-import android.app.AppComponentFactory;
 import android.os.Bundle;
-import android.widget.ListView;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 public class sport extends AppCompatActivity {
-    ListView list_view;
+    private RecyclerView rvSport;
+    private ArrayList<aksesoris> list = new ArrayList<>();
 
 
     protected void onCreate(Bundle saved) {
 
         super.onCreate(saved);
         setContentView(R.layout.sport);
-        list_view = findViewById(R.id.list_view);
 
-        ArrayList<person> arrayList = new ArrayList<>();
+        rvSport = findViewById(R.id.rv_sport);
+        rvSport.setHasFixedSize(true);
+        list.addAll(dataSport.getlistdata());
+        showRecycleList();
 
-        arrayList.add(new person(R.drawable.bola , "bola","bola masih bagus"));
-        arrayList.add(new person(R.drawable.raket , "raket badminton","senar kuat,ringan saat di pukul"));
-        arrayList.add(new person(R.drawable.sepatu , "Sepatu bola","sepatu bola kualitas baik orisinil punya"));
-        arrayList.add(new person(R.drawable.sepatubasket , "sepatu basket","bagus nih original"));
-        arrayList.add(new person(R.drawable.sarung , "sarung tangan kiper","sarung tangan yang mau jadi kiper"));
-
-        personadapter personadaptere = new personadapter(this,R.layout.list_row,arrayList);
+    }
 
 
+    private void showRecycleList(){
+        rvSport.setLayoutManager(new LinearLayoutManager(this));
+        AdapterData adapterData = new AdapterData(list);
+        rvSport.setAdapter(adapterData);
     }
 }
