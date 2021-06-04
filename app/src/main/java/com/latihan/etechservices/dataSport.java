@@ -11,12 +11,13 @@ public class dataSport {
 
     static ArrayList<aksesoris> getlistdata(){
         ArrayList<aksesoris>list = new ArrayList<>();
-        for (int postion = 0;postion < akse.length;postion++){
+        for (int postion = 0;postion < akse.length;){
             aksesoris Aksesoris = new aksesoris();
             Aksesoris.setName(akse[postion]);
             Aksesoris.setDes(deskripsi[postion]);
             Aksesoris.setImage(imageSport[postion]);
             list.add(Aksesoris);
+            postion++;
         }
         return list;
 

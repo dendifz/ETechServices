@@ -47,7 +47,7 @@ public class AdapterData extends RecyclerView.Adapter<AdapterData.HolderData> {
     @Override
     public int getItemCount() {
 
-        return listData.size();
+        return (listData != null) ? listData.size() : 0;
     }
 
     public class HolderData extends RecyclerView.ViewHolder {
