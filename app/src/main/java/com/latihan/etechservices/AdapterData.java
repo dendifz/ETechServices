@@ -1,5 +1,6 @@
 package com.latihan.etechservices;
 
+import android.content.ClipData;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -19,9 +20,12 @@ import java.util.List;
 public class AdapterData extends RecyclerView.Adapter<AdapterData.HolderData> {
     private ArrayList<aksesoris> listData;
 
-    public AdapterData(ArrayList<aksesoris> list) {
+    public AdapterData(Context context, ArrayList<aksesoris> list) {
+        this.context = context;
         this.listData = list;
     }
+
+    Context context;
 
     @NonNull
     @Override
@@ -33,12 +37,14 @@ public class AdapterData extends RecyclerView.Adapter<AdapterData.HolderData> {
     @Override
     public void onBindViewHolder(@NonNull  AdapterData.HolderData holder, int position) {
         aksesoris akses = listData.get(position);
-        Glide.with(holder.itemView.getContext())
+        if (akses != null) {
+        Glide.with(context)
                 .load(akses.getImage())
                 .apply(new RequestOptions().override(55,55))
                 .into(holder.imageView);
         holder.tvName.setText(akses.getName());
         holder.tvDes.setText(akses.getDes());
+        }
 
 
 

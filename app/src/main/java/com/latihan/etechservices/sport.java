@@ -35,7 +35,7 @@ public class sport extends AppCompatActivity {
         rvSport = findViewById(R.id.rv_sport);
         rvSport.setHasFixedSize(false);
         rvSport.setLayoutManager(new LinearLayoutManager(this));
-        AdapterData adapterData = new AdapterData(list);
+        AdapterData adapterData = new AdapterData(this, list);
         adapterData.setListData(dataSport.getlistdata());
         rvSport.setAdapter(adapterData);
     }
