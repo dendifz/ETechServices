@@ -19,7 +19,6 @@ public class Login extends AppCompatActivity {
     private EditText username;
     private EditText password;
     private Button btn_login;
-    String user,pass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,25 +35,17 @@ public class Login extends AppCompatActivity {
         password = findViewById(R.id.pass);
         TextView guest = findViewById(R.id.trouble);
 
-        user = String.valueOf(username);
-        pass = String.valueOf(password);
-        guest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Login.this,Home.class);
-                startActivity(i);
-            }
+        guest.setOnClickListener(v -> {
+            Intent i = new Intent(Login.this,Home.class);
+            startActivity(i);
         });
 
-        btn_login.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                if (!user.equals("user") || !pass.equals(123) ){
-                    Intent intent = new Intent(Login.this,Home.class);
-                    startActivity(intent);
-                }else {
-                    Toast.makeText(getApplicationContext(),"Username Atau Password Salah", LENGTH_SHORT).show();
-                }
+        btn_login.setOnClickListener(v -> {
+            if (username.getText().toString().equals("user") && password.getText().toString().equals("user") ){
+                Intent intent = new Intent(this,Home.class);
+                startActivity(intent);
+            }else {
+                Toast.makeText(getApplicationContext(),"Username Atau Password Salah", LENGTH_SHORT).show();
             }
         });
 

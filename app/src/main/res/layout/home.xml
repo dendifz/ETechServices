@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -22,7 +21,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="43dp"
             android:layout_marginEnd="8dp"
-            android:text="Which subject \nyou looking for?"
+            android:text="@string/text_tittle_home"
             android:textColor="#000000"
             android:textSize="30sp" />
 
@@ -56,7 +55,7 @@
                     android:paddingTop="25dp"
                     android:paddingBottom="5dp"
                     android:drawableTop="@drawable/outline_headphones_white_36dp"
-                    android:text="Music"
+                    android:text="@string/text_home_btnmusic"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/cat_bt" />
 
@@ -67,7 +66,7 @@
                     android:paddingTop="25dp"
                     android:paddingBottom="5dp"
                     android:drawableTop="@drawable/outline_account_balance_wallet_white_36dp"
-                    android:text="e-Money"
+                    android:text="@string/text_home_btne_money"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/cat_bt" />
 
@@ -79,7 +78,7 @@
                     android:paddingBottom="5dp"
                     android:layout_marginEnd="5dp"
                     android:drawableTop="@drawable/outline_sports_basketball_white_36dp"
-                    android:text="Sport"
+                    android:text="@string/text_home_btnsport"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/cat_bt" />
             </TableRow>
@@ -99,7 +98,7 @@
                     android:paddingTop="25dp"
                     android:paddingBottom="5dp"
                     android:drawableTop="@drawable/outline_two_wheeler_white_36dp"
-                    android:text="Automotive"
+                    android:text="@string/text_home_btnautomotive"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/cat_bt" />
 
@@ -110,7 +109,7 @@
                     android:paddingTop="25dp"
                     android:paddingBottom="5dp"
                     android:drawableTop="@drawable/outline_checkroom_white_36dp"
-                    android:text="Fashion"
+                    android:text="@string/text_home_btnfashion"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/cat_bt" />
 
@@ -121,7 +120,7 @@
                     android:paddingBottom="5dp"
                     android:layout_marginEnd="5dp"
                     android:drawableTop="@drawable/outline_laptop_white_36dp"
-                    android:text="Electronic"
+                    android:text="@string/text_home_btnelectronic"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/cat_bt" />
             </TableRow>
@@ -140,7 +139,7 @@
                     android:paddingTop="25dp"
                     android:paddingBottom="5dp"
                     android:drawableTop="@drawable/outline_earbuds_white_36dp"
-                    android:text="Accesories"
+                    android:text="@string/text_home_btnaccesories"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/cat_bt" />
 
@@ -151,7 +150,7 @@
                     android:paddingTop="25dp"
                     android:paddingBottom="5dp"
                     android:drawableTop="@drawable/outline_kitchen_white_36dp"
-                    android:text="Kitchen"
+                    android:text="@string/text_home_btnkitchen"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/cat_bt" />
 
@@ -162,7 +161,7 @@
                     android:paddingBottom="5dp"
                     android:layout_marginEnd="5dp"
                     android:drawableTop="@drawable/outline_restaurant_white_36dp"
-                    android:text="FOOD - DRINKS"
+                    android:text="@string/text_home_btnfood_drinks"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/cat_bt" />
             </TableRow>

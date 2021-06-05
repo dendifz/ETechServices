@@ -1,34 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login"
     android:padding="20dp"
+    android:gravity="center"
     android:orientation="vertical"
     >
 
     <TextView
-        android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="E-tech Servies"
-        android:textSize="30dp"
-        android:textColor="#000000"
-        android:fontFamily="@font/bereg"
-        android:layout_marginBottom="40dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="sign to shopping"
+        android:layout_gravity="center"
+        android:text="@string/text_tittle_sign_to_shopping"
         android:fontFamily="@font/opeita"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:layout_marginBottom="40dp"
         android:textColor="#EE5A5A"
         />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="100dp"
@@ -44,11 +35,11 @@
         android:layout_width="350dp"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_baseline_person_24"
-        android:hint="Username"
-        android:textColor="#EE5A5A"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:hint="@string/text_login_username"
         android:id="@+id/username"
         android:layout_marginBottom="10dp"/>
+
     <EditText
         android:padding="20dp"
         android:inputType="textPassword"
@@ -56,9 +47,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/pass"
         android:layout_gravity="center"
-        android:drawableLeft="@drawable/ic_baseline_lock_24"
-        android:hint="password"
-        android:textColor="#EE5A5A"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:hint="@string/hint_login_pswd"
         android:layout_marginBottom="40dp"/>
     <Button
         android:layout_width="300dp"
@@ -66,8 +56,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
         android:id="@+id/btn_login"
-        android:text="login"
-        android:onClick="OnClick"
+        android:text="@string/text_login_login"
         android:textColor="#FFFFFF"
         android:background="@drawable/custom1"
         />
@@ -75,9 +64,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Guest Login"
+        android:text="@string/text_login_guest_login"
         android:textColor="#EE5A5A"
         android:id="@+id/trouble"
-        android:textSize="19dp"/>
+        android:textSize="19sp"/>
 
 </LinearLayout>
