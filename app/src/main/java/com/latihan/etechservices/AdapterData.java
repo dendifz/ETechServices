@@ -50,6 +50,11 @@ public class AdapterData extends RecyclerView.Adapter<AdapterData.HolderData> {
         return (listData != null) ? listData.size() : 0;
     }
 
+    public void setListData(ArrayList<aksesoris> listData){
+        notifyDataSetChanged();
+        this.listData = listData;
+    }
+
     public class HolderData extends RecyclerView.ViewHolder {
         ImageView imageView;
         TextView tvName,tvDes;

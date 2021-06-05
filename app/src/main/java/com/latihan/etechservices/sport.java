@@ -8,6 +8,7 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,9 +16,8 @@ import java.util.ArrayList;
 
 public class sport extends AppCompatActivity {
     private RecyclerView rvSport;
-    private ArrayList<aksesoris> list = new ArrayList<>();
 
-
+    private ArrayList<aksesoris> list;
     protected void onCreate(Bundle saved) {
         /** Making this activity, full screen */
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -26,18 +26,17 @@ public class sport extends AppCompatActivity {
         getSupportActionBar().hide();
         super.onCreate(saved);
         setContentView(R.layout.sport);
-
-        rvSport = findViewById(R.id.rv_sport);
-        rvSport.setHasFixedSize(false);
-        list.addAll(dataSport.getlistdata());
         showRecycleList();
 
     }
 
 
     private void showRecycleList(){
+        rvSport = findViewById(R.id.rv_sport);
+        rvSport.setHasFixedSize(false);
         rvSport.setLayoutManager(new LinearLayoutManager(this));
         AdapterData adapterData = new AdapterData(list);
+        adapterData.setListData(dataSport.getlistdata());
         rvSport.setAdapter(adapterData);
     }
 }
