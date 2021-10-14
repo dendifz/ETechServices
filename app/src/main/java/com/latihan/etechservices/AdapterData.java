@@ -40,7 +40,6 @@ public class AdapterData extends RecyclerView.Adapter<AdapterData.HolderData> {
         if (akses != null) {
         Glide.with(context)
                 .load(akses.getImage())
-                .apply(new RequestOptions().override(55,55))
                 .into(holder.imageView);
         holder.tvName.setText(akses.getName());
         holder.tvDes.setText(akses.getDes());
